@@ -1,0 +1,57 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+#leftSidebar{
+	position: fixed;
+	width: 200px;
+	height: 100%;
+	background: #000000;
+	left: -200px;
+}
+#leftSidebar.active{
+left: 0px;	
+}
+#leftSidebar ul li{
+	cursor: pointer;
+	list-style: none;
+	padding: 10px 10px;
+	border-bottom: 2px solid rgba(255,255,255,0.4);
+	transition: all 0.1s linear;
+}
+
+#leftSidebar ul li:hover{
+	background: #c03926;
+}
+
+#leftSidebar ul li a{
+	color: white;
+	font-family: sans-serif;
+	text-decoration: none
+}
+
+.leftSidebarButton{
+	position: absolute;
+	left: 200px;
+	cursor: pointer;
+	top: 0;
+}
+.leftSidebarButton:before{
+	content: "\f0c9";
+	font-family: FontAwesome;
+	color: white;
+	position: absolute;
+	font-size: 28px;
+	background: #e74c3c;
+	padding: 5px 10px;
+	transition: all 0.1s linear;
+	
+}
+
+.leftSidebarButton:hover:before{
+	background: #c03926;
+}
